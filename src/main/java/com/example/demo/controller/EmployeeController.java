@@ -37,6 +37,7 @@ public class EmployeeController {
 	}
 	
 	@DeleteMapping
+	@ApiOperation( value = "Delete employee")
 	@ApiImplicitParams(
 			@ApiImplicitParam(name="test", value = "test", paramType = "header")
 			)
