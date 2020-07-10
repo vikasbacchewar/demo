@@ -31,7 +31,7 @@ public class EmployeeController {
 	}
 	
 	@PutMapping
-	@ApiOperation( value = "Update Employee Information")
+	@ApiOperation( value = "Update Employee Information by name")
 	public Employee put(@RequestBody Employee  emBody,@RequestParam(value = "name", defaultValue = "World") String name) {
 		return new Employee();
 	}
